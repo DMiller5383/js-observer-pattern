@@ -1,3 +1,7 @@
+/**
+ * @file ThemePosts.js
+ * @author Daniel Miller
+ */
 define(['Observer'], function(Observer){
 
   function ThemePosts(elem) {
@@ -12,4 +16,4 @@ define(['Observer'], function(Observer){
   };
 
   return ThemePosts;
-})
+});
