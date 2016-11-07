@@ -1,15 +1,14 @@
 /**
- * @file ThemeTitle.js
- * @author Daniel Miller
+ * This is a child of the observer class that will change the title of the page
+ * when the user chages the value of the subject
+ * @module ThemeTitle
  */
 
 define(['Observer'], function(Observer){
-  /*
-   * This is a child of the observer class that will change the title of the page
-   * when the user chages the value of the subject.
-   *
-   * @param String elem The id of the title element to be changed.
-   * @return ThemeTitle Returns the ThemeTitle constructor
+  /**
+   * @constructor
+   * @alias module: ThemeTitle
+   * @param {String} elem The id of the title element to be changed.
    */
 
   function ThemeTitle(elem) {
@@ -17,7 +16,7 @@ define(['Observer'], function(Observer){
   }
 
   ThemeTitle.prototype = {
-
+    /** Updates the page title. */
     update: function() {
       console.log('title updated');
     }

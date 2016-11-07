@@ -1,5 +1,8 @@
-
-require(["dropdown", "subject", "ThemeImage", "ThemeTitle", "ThemePosts"], function(Dropdown, Subject, ThemeImage, ThemeTitle, ThemePosts){
+/**
+ * @file main.js
+ * @author Daniel Miller
+ */
+require(["Dropdown", "Subject", "ThemeImage", "ThemeTitle", "ThemePosts"], function(Dropdown, Subject, ThemeImage, ThemeTitle, ThemePosts){
 
   var themeImage = new ThemeImage('theme-image');
   var themeTitle = new ThemeTitle('theme-title');

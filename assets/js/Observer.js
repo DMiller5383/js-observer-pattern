@@ -1,14 +1,13 @@
 /**
- * @file Observer.js
- * @author Daniel Miller
+ * Any element that needs to be notified when a subject object is changed.  Any child class
+ * class of this object should override the update method.
+ * @module Observer
  */
 define(function(){
-  /*
-   * Any element that needs to be notified when a subject object is changed.  Any child class
-   * class of this object should override the update method.
-   *
-   * @param String elem The id of the element that needs to be notified.
-   * @return Observer Returns the Observer constructor
+  /**
+   * @constructor
+   * @alias module: Observer
+   * @param {String} elem The id of the HTML node to be updated.
    */
 
   function Observer(elem) {
@@ -17,6 +16,7 @@ define(function(){
   }
 
   Observer.prototype.update = function() {
+    /** Stub method for updating HTML node. */
     return true;
   };
 
